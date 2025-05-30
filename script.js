@@ -1,6 +1,9 @@
-function toggleMenu() {
-  const menu = document.getElementById("mobileMenu");
-  menu.classList.toggle("active");
+// function toggleMenu() {
+//   const menu = document.getElementById("mobileMenu");
+//   menu.classList.toggle("active");
+// }
+function reloadPage() {
+  location.reload();
 }
 
 document.getElementById("consultBtn").addEventListener("click", function () {
@@ -100,3 +103,11 @@ function openWhatsApp() {
 function openContactForm() {
   window.open("contact.html", "_blank");
 }
+function showService(service) {
+  if (service === 'audit') {
+    document.getElementById('audit-content').style.display = 'block';
+    // Scroll to the content if needed
+    document.getElementById('audit-content').scrollIntoView({ behavior: 'smooth' });
+  }
+}
+

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Frequently Asked Questions</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f9f9f9;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .faq-item {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .faq-question {
+      cursor: pointer;
+      font-weight: bold;
+      color: #007BFF;
+      margin: 0;
+    }
+
+    .faq-answer {
+      display: none;
+      margin-top: 10px;
+      color: #444;
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Frequently Asked Questions</h1>
+
+  <div class="faq-item">
+    <p class="faq-question">How do we get started with your services?</p>
+    <div class="faq-answer">
+      You can contact us via phone, email, or by filling out the contact form on our website. We will schedule an initial consultation to understand your needs and provide a proposal.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-question">Is your firm registered with ICAN?</p>
+    <div class="faq-answer">
+      Yes, we are a registered audit firm licensed by the Institute of Chartered Accountants of Nepal (ICAN), ensuring full compliance with national regulations.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-question">Do you offer consulting for startups and SMEs?</p>
+    <div class="faq-answer">
+      Yes, we provide tailored consulting services for startups and small to medium-sized enterprises to help them grow efficiently.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-question">Are your audits compliant with Nepal Financial Reporting Standards (NFRS)?</p>
+    <div class="faq-answer">
+      Absolutely. All our audits strictly adhere to NFRS and other applicable national standards.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-question">Do you also help with tax filing and returns?</p>
+    <div class="faq-answer">
+      Yes, we assist individuals and businesses with tax planning, filing, and compliance services.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-question">Who needs to get an audit in Nepal?</p>
+    <div class="faq-answer">
+      Businesses registered under the Company Act, NGOs, INGOs, and certain entities above specified thresholds are required to get audited annually as per Nepalese law.
+    </div>
+  </div>
+  <a class="back-btn" href="index.html">Back to Services</a>
+
+  <script>
+    document.querySelectorAll('.faq-question').forEach(q => {
+      q.addEventListener('click', () => {
+        q.parentElement.classList.toggle('active');
+      });
+    });
+  </script>
+
+</body>
+</html>

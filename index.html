@@ -15,43 +15,53 @@
     <img src="logo.jpg" alt="Tax First Logo" class="logo" />
     <h1>Tax First Private Limited</h1>
     <div class="header-buttons">
-      <button id="consultBtn">📞 Consult Us</button>
-      <div class="menu-toggle" onclick="toggleMenu()">
-        <span></span><span></span><span></span>
-      </div>
+      <button id="consultBtn">📞 Ask Us</button>
     </div>
   </header>
 
-  <nav class="nav" id="mobileMenu">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Resource</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">FAQ</a></li>
+  <nav class="nav">
+  <ul>
+    <!-- <li><a href="#">Home</a></li> -->
+    <li><a href="#" onclick="location.reload();">Home</a></li>
+
+    
+    <li class="services-menu">
+      <a href="#">Services</a>
+      <ul class="dropdown">
+        <li><a href="1.html" target="_blank">Audit & Assurance</a></li>
+        <li class="sub-service">
+      <a href="2.html" target="_blank">Internal Audit & Risk Advisory</a>
+    </li>
+        <li class="sub-service"><a href="3.html" target="_blank">Tax Audit & Tax Advisory</a></li>
+        <li class="sub_service"><a href="4.html" target="_blank">Consulting & Advisory</a></li>
+        <li class="sub-service"><a href="5.html" target="_blank">Legal Services</a></li>
+      </ul>
+    </li>
+    <li class="services-menu about-menu">
+  <a href="#">About</a>
+  <ul class="dropdown">
+    <li><a href="a1.html" class="about-link" data-section="mission">Mission,Vision & Core Value</a></li>
     </ul>
-  </nav>
+    </li>
+    <li class="services-menu about-menu">
+  <a href="#">Contact</a>
+  <ul class="dropdown">
+    <li><a href="caca.html" class="about-link" data-section="mission">Contact</a></li>
+    </ul>
+    </li>
+      <li class="services-menu about-menu">
+  <a href="#">FAQ</a>
+  <ul class="dropdown">
+    <li><a href="b1.html" class="about-link" data-section="mission">FAQ</a></li>
+    </ul>
+    </li>
 
-  <main class="main-content">
-    <p class="tagline">"Auditing with a Vision For Your Future!"</p>
+  </ul>
+</nav>
 
-    <section class="clients">
-      <div class="counter">
-        <p id="clientCount">0</p>
-        <p>Satisfied Clients</p>
-      </div>
-      <div class="gallery">
-        <span class="arrow left" onclick="changeSlide(-1)">&#8592;</span>
-        <span class="arrow right" onclick="changeSlide(1)">&#8594;</span>
-        <img src="000.jpg" alt="1" />
-        <img src="aaaaa.jpg" alt="2" />
-        <img src="22.jpeg" alt="3" />
-        <img src="333.jpg" alt="4" />
-        <img src="666.jpg" alt="5" />
-      </div>
-    </section>
-  </main>
+  <p class="tagline">"Auditing with a Vision For Your Future!"</p>
+   
+ 
   <section class="why-choose-us">
     <h2>Why Choose Us?</h2>
     <p>
@@ -74,6 +84,7 @@
       We don’t just crunch numbers—we provide clarity, confidence, and strategic direction for your financial future.
     </p>
   </section>
+  
   <section class="expertise-heading">
     <h2>Our Comprehensive Range of Expertise</h2>
   </section>
@@ -119,8 +130,27 @@
           right business structure to completing all necessary paperwork.</p>
         <a class="read-more" href="ee.html">Read More</a>
       </div>
+    
+      <div class="gallery">
+        <span class="arrow left" onclick="changeSlide(-1)">&#8592;</span>
+        <span class="arrow right" onclick="changeSlide(1)">&#8594;</span>
+        <img src="000.jpg" alt="1" />
+        <img src="aaaaa.jpg" alt="2" />
+        <img src="22.jpeg" alt="3" />
+        <img src="333.jpg" alt="4" />
+        <img src="666.jpg" alt="5" />
+      </div>
     </div>
   </section>
+  <main class="main-content">
+    <section class="clients">
+      <div class="counter">
+        <p id="clientCount">0</p>
+        <p><b>Satisfied Clients</b></p>
+      </div>
+      
+    </section>
+  </main>
   <section class="need-help">
     <h2>Need Help?</h2>
     <div class="help-buttons">
