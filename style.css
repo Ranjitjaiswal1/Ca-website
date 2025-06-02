@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 4px;
   font-family: Arial, sans-serif;
   background: #f0f0f5;
   color: #333;
@@ -10,7 +10,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #1ebd57;
+  background-color: rgb(26, 26, 81);
   color: white;
   flex-wrap: wrap;
 }
@@ -28,7 +28,7 @@ body {
 }
 
 #consultBtn {
-  background-color:#d48806;
+  background-color:green;
   color: white;
   border: none;
   padding: 10px 15px;
@@ -43,31 +43,30 @@ body {
 }
 
 
-.nav {
-  display: flex;
-  width: 200px;
-  background-color: rgb(232, 5, 103);
-
-  
-}
+  .nav {
+      display: flex;
+      width: 100%;
+      background-color: rgb(18, 18, 136);
+    }
 
 .nav.active {
   display: flex;
   
 }
 
-.nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 100px;
-  position: relative;
-}
+ .nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 50px;
+      flex-wrap: wrap;
+    }
 
 .nav li {
   padding: 10px 20px;
   border-bottom: 1px solid #444;
+  position: relative;
 
 }
 
@@ -77,18 +76,36 @@ body {
 }
 
 .main-content {
-  text-align: center;
+  text-align: left; /* Change from center to left */
   padding: 20px;
-  position:relative;
+  max-width: 900px;
+  margin: auto;
+}
 
+.counter {
+  text-align: left; /* Ensures text inside is left-aligned */
 }
 
 .tagline {
-  font-size: 1.5em;
-  margin: 20px 0;
+  font-size: 1.2rem;
   font-style: italic;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  margin: 20px 0;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeSlideIn 1.2s ease-out forwards;
+  font-size:xx-large;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(227, 7, 7);
 }
+
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 .clients {
   padding-left: 0px;
