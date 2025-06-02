@@ -1,7 +1,11 @@
-*{
-  padding: 0;margin: 0;
-}
 
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
 body {
   margin: 0px;
   font-family: Arial, sans-serif;
@@ -369,7 +373,7 @@ body {
 }
 
 /* Responsive */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
 
   .row-2 .service,
   .row-3 .service {
