@@ -1,8 +1,13 @@
+*{
+  padding: 0;margin: 0;
+}
+
 body {
-  margin: 4px;
+  margin: 0px;
   font-family: Arial, sans-serif;
   background: #f0f0f5;
-  color: #333;
+  color:#333;
+  padding: 0;
 }
 
 .header {
@@ -10,9 +15,10 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: rgb(26, 26, 81);
-  color: white;
+  background-color: rgb(12, 12, 71);
+  color:white;
   flex-wrap: wrap;
+  max-width: 100%;
 }
 
 .logo {
@@ -202,31 +208,30 @@ body {
 }
 
 .why-choose-us p {
-  margin-top: 20px;
+  margin-top: 0px;
   font-size: 16px;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .why-choose-us {
   background: #eef5ff;
-  padding: 40px 20px;
-  margin-top: 40px;
+  padding: 10px 0px;
+  margin-top:0px;
 }
 
 .why-choose-us h2 {
   font-size: 28px;
   margin-bottom: 20px;
   color: #004080;
-  text-align: center;
 }
 
 .why-choose-us p {
   list-style: disc inside;
   text-align: left;
-  max-width: 700px;
-  margin: auto;
+  max-width: 100%;
+  margin:0;
   font-size: 18px;
   line-height: 1.8;
 }
@@ -253,9 +258,9 @@ h2 {
   font-size: 1.1rem;
   line-height: 1.8;
   color: #333;
-  max-width: 800px;
-  margin: 10px auto;
-  text-align: center;
+  max-width:100%;
+  margin:8px auto;
+  text-align:left;
 }
 
 /* Animation */
